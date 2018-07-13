@@ -1,0 +1,14 @@
+for (n = 0; ;n++) {
+  T = (n * (n + 1)) / 2;
+  factor_arr = [];
+  for (i = 1; i <= T; i++) {
+    if (T % i == 0) {
+      factor_arr.push(i);
+    }
+  }
+  L = factor_arr.length();
+  if (L >= 500) {
+    break;
+    return T;
+  }
+}
