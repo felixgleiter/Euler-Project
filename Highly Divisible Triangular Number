@@ -6,7 +6,7 @@ for (n = 0; ;n++) {
       factor_arr.push(i);
     }
   }
-  L = factor_arr.length();
+  L = factor_arr.length;
   if (L >= 500) {
     break;
     return T;
