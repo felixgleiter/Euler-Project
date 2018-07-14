@@ -1,13 +1,17 @@
-function row_collapse(arr1, arr2) {
-  for (var i = 0; i < arr1.length; i++) {
-    arr1[i] += Math.max(arr2[i], arr2[i + 1]);
+/*function row_collapse(arr1, arr2) {
+  for (var i = 0; i < rows[n - 1].length; i++) {
+    rows[n - 1][i] += Math.max(rows[n][i], rows[n][i + 1]);
   }
-}
+}*/
 
 rows = [[75],[95,64],[17,47,82],[18,35,87,10],[20,4,82,47,65]];
 
 for (var n = rows.length - 1; n > 0; n--) {
-  row_collapse(rows[n - 1], rows[n]);
+  for (var i = 0; i < rows[n - 1].length; i++) {
+    rows[n - 1][i] += Math.max(rows[n][i], rows[n][i + 1]);
+  }
 }
 
 console.log(rows[0][0]);
+
+/*row_collapse(rows[n - 1], rows[n]);*/
