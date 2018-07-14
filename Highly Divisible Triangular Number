@@ -1,12 +1,12 @@
-for (n = 0; ;n++) {
-  T = (n * (n + 1)) / 2;
-  factor_arr = [];
-  for (i = 1; i <= T; i++) {
+for (var n = 0; n < 1000000; n++) {
+  var T = (n * (n + 1)) / 2;
+  var factor_arr = [];
+  for (var i = 1; i <= T; i++) {
     if (T % i == 0) {
       factor_arr.push(i);
     }
   }
-  L = factor_arr.length;
+  var L = factor_arr.length;
   if (L >= 500) {
     break;
     return T;
